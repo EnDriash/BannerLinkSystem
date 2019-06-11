@@ -1,0 +1,95 @@
+nav{
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: $navwidth;
+    height: 100vh;
+    background-color: #191919;
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5%;
+            overflow: auto;
+            height: 60px;
+            min-height: 60px;
+            padding: 0 20px 0 10px;
+            img{
+                position: relative;
+                margin-top: 2%;
+                display: inline-block;
+            }
+            .hamburger{
+                width: 20%;
+                cursor: pointer;
+                    span{
+                        display: block;
+                        border-top: 2px $main-color solid;
+                        border-bottom: 1px $main-color solid;
+                        border-radius: 10px;
+                        margin: 16.6% 0;
+                        width: 90%;
+                    }
+            }
+        }
+        .navigation-list{
+            border-bottom: 1px #333333 solid;
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    padding: 15px 0 15px 25px;
+                    cursor: pointer;
+                    div{
+                        display: inline-block;
+                        width: 15px;
+                        height: 10px;
+                        svg{
+                        stroke: $main-color;
+                        }
+                    }
+                    a{
+                        padding-left: 10px;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: $main-color;
+                    }
+                    &:hover{
+                        background-color: #282828;
+                        border-left: 4px $orange-color solid;
+                        a{
+                            color: white;
+                        }
+                        div{
+                            svg{
+                                stroke: white;
+                            }
+                        }
+                    }
+                    
+                    
+                }
+            }
+        }
+        .contacts{
+            padding-left: 25px;
+            h5{
+            }
+            [class^="cont-"]{
+                padding: 15px 10px;
+                .img{
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+                a{
+                    color: $link-color;
+                    text-decoration: none;
+                }
+            }
+
+        }
+}

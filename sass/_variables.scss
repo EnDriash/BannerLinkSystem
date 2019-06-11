@@ -1,6 +1,8 @@
 /* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
+$main-color: #979797;
+$lightgrey-color: #e3e3e3;
+$orange-color: #f58220;
+$link-color: #83a3b9;
 
 /* Font sizes */
 $paragraph-font-size: 16px;
@@ -8,3 +10,7 @@ $paragraph-font-size: 16px;
 /* Fonts */
 $brand-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
+
+$headerhigh: 60px;
+$navwidth: 188px;
+$headerwidth: calc(100% - #{$navwidth});

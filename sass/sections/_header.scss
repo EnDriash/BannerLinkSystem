@@ -1,0 +1,56 @@
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: $headerwidth;
+    min-height: 60px;
+    height: $headerhigh;
+    background-color: #ffffff;
+    .header-container{
+        float: right;
+        height: 100%;
+        & > div{
+            border-left: 1px $lightgrey-color solid;
+            height: 100%;
+            margin-left: 5px;
+        }
+        .exit{
+            position: relative;
+            top:-5px;
+        }
+        .exit,.notifications,.account{
+            cursor: pointer;
+        }
+        div{
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 20px 10px;
+            
+                 p{
+                     color: $main-color;
+                     font-size: 20px;
+                     margin: 0;
+                     display: inline-block;
+                 }
+
+                 a{
+                    color: $link-color;
+                    font-size: 16px;
+                    text-decoration: none;
+                    cursor: pointer;
+                 }
+
+                .icon{
+                    padding: 0;
+                    margin: 0 10px;
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                    svg{
+                        fill: $main-color;
+                    }
+                }
+        
+        }
+    }
+}

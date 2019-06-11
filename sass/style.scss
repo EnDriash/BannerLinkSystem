@@ -3,10 +3,13 @@
 @import "normalize";
 @import "layout";
 /* Components */
-@import "components/form_field";
+@import "components/_text";
 
 /* Sections */
-@import "section/registration_form";
+@import "sections/_nav";
+@import "sections/_header";
+@import "sections/_main";
 
 /* Pages / Views */
-@import "pages/registration";
+@import "pages/_general";
+
