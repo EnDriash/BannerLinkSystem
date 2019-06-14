@@ -891,16 +891,16 @@ nav .navigation-list ul li a {
   color: #979797;
 }
 
-nav .navigation-list ul li:hover {
+nav .navigation-list ul li:hover, nav .navigation-list ul li:target {
   background-color: #282828;
   border-left: 4px #f58220 solid;
 }
 
-nav .navigation-list ul li:hover a {
+nav .navigation-list ul li:hover a, nav .navigation-list ul li:target a {
   color: white;
 }
 
-nav .navigation-list ul li:hover div svg {
+nav .navigation-list ul li:hover div svg, nav .navigation-list ul li:target div svg {
   stroke: white;
 }
 
@@ -1063,6 +1063,10 @@ main {
   background-color: #e3e3e3;
 }
 
+.links .row .table table tr:hover .link a {
+  color: #336bdd;
+}
+
 .links .row .table table tr:hover .icons div svg {
   display: inline-block;
   cursor: pointer;
@@ -1078,6 +1082,8 @@ main {
 
 .links .row .table table tr .link a {
   font-size: 1.4em;
+  color: #83a3b9;
+  text-decoration: none;
 }
 
 .links .row .table table tr .icons div {
@@ -1089,6 +1095,98 @@ main {
 
 .links .row .table table tr .icons div svg {
   display: none;
+}
+
+.banners .row {
+  text-align: center;
+}
+
+.banners .row .button {
+  min-width: 100px;
+  margin: 3% auto;
+}
+
+.banners .row .table {
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.banners .row .table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.banners .row .table table tr:hover {
+  background-color: #e3e3e3;
+}
+
+.banners .row .table table tr:hover .link a {
+  color: #336bdd;
+}
+
+.banners .row .table table tr:hover .icons div svg {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.banners .row .table table tr:hover .icons div:hover svg {
+  stroke: #f58220;
+}
+
+.banners .row .table table tr td {
+  border-top: 1px #e3e3e3 solid;
+}
+
+.banners .row .table table tr .link a {
+  font-size: 1.4em;
+  color: #83a3b9;
+  text-decoration: none;
+}
+
+.banners .row .table table tr .icons div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.banners .row .table table tr .icons div svg {
+  display: none;
+}
+
+.personaldata .specrow {
+  text-align: center;
+}
+
+.personaldata .specrow form {
+  padding: 3% 0;
+  margin: 0 auto;
+  border-bottom: 1px #e3e3e3 solid;
+}
+
+.personaldata .specrow form label {
+  display: inline-block;
+  text-align: left;
+  width: 15%;
+  color: #979797;
+  padding: 3%;
+}
+
+.personaldata .specrow form input {
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px #979797 solid;
+  margin: 1% 0;
+  padding: 2% 4%;
+  width: 40%;
+}
+
+.personaldata .specrow form input:-ms-input-placeholder {
+  color: #e3e3e3;
+}
+
+.personaldata .specrow form input::placeholder {
+  color: #e3e3e3;
 }
 
 /* Pages / Views */

@@ -55,7 +55,7 @@ nav{
                         text-decoration: none;
                         color: $main-color;
                     }
-                    &:hover{
+                    &:hover, &:target{
                         background-color: #282828;
                         border-left: 4px $orange-color solid;
                         a{

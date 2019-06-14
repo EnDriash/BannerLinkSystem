@@ -1,4 +1,4 @@
-.links{
+.banners{
     .row{
         text-align: center;
         .button{
@@ -15,8 +15,8 @@
                     &:hover{
                         background-color: $lightgrey-color;
                         .link a{
-                            color: #336bdd;
-                         }
+                           color: #336bdd;
+                        }
                         .icons{
                             div{
                                 svg{
