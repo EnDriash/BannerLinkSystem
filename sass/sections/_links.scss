@@ -1,0 +1,55 @@
+.links{
+    .row{
+        text-align: center;
+        .button{
+            min-width: 100px;
+            margin: 3% auto;
+        }
+        .table{
+            box-sizing: border-box;
+            text-align: left;
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                tr{
+                    &:hover{
+                        background-color: $lightgrey-color;
+                        .icons{
+                            div{
+                                svg{
+                                    display: inline-block;
+                                    cursor: pointer;
+                                }
+                                &:hover svg{
+                                    
+                                    stroke: $orange-color;
+                                }
+                            }
+                        }
+                    }
+
+                    td {
+                        border-top: 1px $lightgrey-color solid;
+                        }
+                    
+                    .link{
+                        a{
+                            font-size: 1.4em;
+                        }
+                    }
+                    .icons{
+                        div{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            margin: 0 10px;
+                                svg{
+                                    display: none;
+                                }
+                            }
+                        }
+                }
+            }
+        }
+    }
+}

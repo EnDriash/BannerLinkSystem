@@ -4,11 +4,15 @@
 @import "layout";
 /* Components */
 @import "components/_text";
+@import "components/_sections";
+@import "components/_buttons";
 
 /* Sections */
 @import "sections/_nav";
 @import "sections/_header";
 @import "sections/_main";
+@import "sections/_generalstatistic";
+@import "sections/_links";
 
 /* Pages / Views */
 @import "pages/_general";
