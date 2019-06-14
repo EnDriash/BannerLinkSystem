@@ -1189,6 +1189,31 @@ main {
   color: #e3e3e3;
 }
 
+/* Pagination links */
+.details .row {
+  margin: 3% auto;
+  text-align: center;
+  /* Style the active/current link */
+  /* Add a grey background color on mouse-over */
+}
+
+.details .row .pagination a {
+  font-size: 1.5em;
+  color: black;
+  padding: 10px 8px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.details .row .pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.details .row .pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
 /* Pages / Views */
 body {
   padding: 60px 0 0 188px;

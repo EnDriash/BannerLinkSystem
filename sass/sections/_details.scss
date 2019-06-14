@@ -1,0 +1,24 @@
+/* Pagination links */
+.details{
+    .row{
+        margin: 3% auto;
+        text-align: center;
+
+        .pagination a {
+        font-size: 1.5em;
+        color: black;
+        padding: 10px 8px;
+        text-decoration: none;
+        transition: background-color .3s;
+    }
+    
+    /* Style the active/current link */
+    .pagination a.active {
+        background-color: dodgerblue;
+        color: white;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    .pagination a:hover:not(.active) {background-color: #ddd;}
+}
+}
