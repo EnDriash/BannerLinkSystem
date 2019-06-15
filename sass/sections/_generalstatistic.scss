@@ -1,33 +1,6 @@
 .general-statistic{
-// a moze by mixin?
-    .time{
-        padding: 3% 0;
-        border-bottom: 1px $lightgrey-color solid;
-        .reportrange{
-            display: inline-block;
-            margin-left: 30%;
-            float: left;
-            background: #fff; 
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid $lightgrey-color;
-            font-size: 1.3em;
-            color: black;
-        }
-        .button-refresh{
-            float: left;
-            margin: 0 4%;
-            padding: 10px;
-            width: 25px;
-            height: 25px;
-            div{
-                svg{
-                stroke: white;
-                }
-            }
-        }
-    }
+    @include time;
+    
     .statistic{
         [class*="stat-"]{
             border-bottom: 1px solid $lightgrey-color;
@@ -44,7 +17,5 @@
     }
     .chart{
         padding: 3% 0;
-    
     }
-
 }

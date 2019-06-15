@@ -1,0 +1,97 @@
+@mixin time{
+    .time{
+        padding: 3% 0;
+        border-bottom: 1px $lightgrey-color solid;
+        .reportrange{
+            display: inline-block;
+            margin-left: 30%;
+            float: left;
+            background: #fff; 
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid $lightgrey-color;
+            font-size: 1.3em;
+            color: black;
+        }
+        .button-refresh{
+            float: left;
+            margin: 0 4%;
+            padding: 10px;
+            width: 25px;
+            height: 25px;
+            div{
+                svg{
+                stroke: white;
+                }
+            }
+        }
+    }
+}
+
+@mixin pagination{
+    .pagination{
+        padding-bottom: 3%;
+        a {
+            font-size: 1.5em;
+            color: black;
+            padding: 10px 8px;
+            text-decoration: none;
+            transition: background-color .3s;
+                &:hover:not(.active) {
+                    background-color: #ddd;
+                }
+                .active {
+                    background-color: dodgerblue;
+                    color: white;
+                }
+        }
+    }   
+} 
+
+@mixin table{
+    table{
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 95%;
+        font-size: 1.2em;
+        border-collapse: collapse;
+        thead{
+            tr{
+                background-color: none;
+            th{
+                padding: 1.5% 0;
+                color: $main-color;
+                p{
+                    display: inline-block; 
+                }
+                div{
+                    display: none;
+                }
+                &:hover{
+                    background-color: $lightgrey-color;
+                    border-radius: 4px;
+                    color: black;
+                    div{
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            }
+        }
+        tbody{
+            tr{
+                border-bottom: 1px solid $lightgrey-color;
+                &:hover{
+                    background-color: $lightgrey-color;
+                }
+                td{
+                    padding: 1.5% 0;
+                    color: black;
+                }
+            }
+        }
+    }
+}

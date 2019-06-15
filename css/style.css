@@ -810,6 +810,16 @@ section h5 {
   font-size: 1.2em;
 }
 
+.button:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.button:hover p {
+  transform: scale(1.2);
+  font-weight: bold;
+}
+
 .button p {
   text-align: center;
   margin: 0;
@@ -1189,12 +1199,49 @@ main {
   color: #e3e3e3;
 }
 
+.personaldata .row {
+  padding: 3%;
+  text-align: center;
+}
+
 /* Pagination links */
+.details .time {
+  padding: 3% 0;
+  border-bottom: 1px #e3e3e3 solid;
+}
+
+.details .time .reportrange {
+  display: inline-block;
+  margin-left: 30%;
+  float: left;
+  background: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+  font-size: 1.3em;
+  color: black;
+}
+
+.details .time .button-refresh {
+  float: left;
+  margin: 0 4%;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.details .time .button-refresh div svg {
+  stroke: white;
+}
+
 .details .row {
   margin: 3% auto;
   text-align: center;
-  /* Style the active/current link */
-  /* Add a grey background color on mouse-over */
+}
+
+.details .row .pagination {
+  padding-bottom: 3%;
 }
 
 .details .row .pagination a {
@@ -1205,13 +1252,169 @@ main {
   transition: background-color .3s;
 }
 
-.details .row .pagination a.active {
+.details .row .pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.details .row .pagination a .active {
   background-color: dodgerblue;
   color: white;
 }
 
-.details .row .pagination a:hover:not(.active) {
+.details table {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 95%;
+  font-size: 1.2em;
+  border-collapse: collapse;
+}
+
+.details table thead tr {
+  background-color: none;
+}
+
+.details table thead tr th {
+  padding: 1.5% 0;
+  color: #979797;
+}
+
+.details table thead tr th p {
+  display: inline-block;
+}
+
+.details table thead tr th div {
+  display: none;
+}
+
+.details table thead tr th:hover {
+  background-color: #e3e3e3;
+  border-radius: 4px;
+  color: black;
+}
+
+.details table thead tr th:hover div {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.details table tbody tr {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.details table tbody tr:hover {
+  background-color: #e3e3e3;
+}
+
+.details table tbody tr td {
+  padding: 1.5% 0;
+  color: black;
+}
+
+.payouthistory .time {
+  padding: 3% 0;
+  border-bottom: 1px #e3e3e3 solid;
+}
+
+.payouthistory .time .reportrange {
+  display: inline-block;
+  margin-left: 30%;
+  float: left;
+  background: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+  font-size: 1.3em;
+  color: black;
+}
+
+.payouthistory .time .button-refresh {
+  float: left;
+  margin: 0 4%;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.payouthistory .time .button-refresh div svg {
+  stroke: white;
+}
+
+.payouthistory .row {
+  margin: 3% auto;
+  text-align: center;
+}
+
+.payouthistory .row .pagination {
+  padding-bottom: 3%;
+}
+
+.payouthistory .row .pagination a {
+  font-size: 1.5em;
+  color: black;
+  padding: 10px 8px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.payouthistory .row .pagination a:hover:not(.active) {
   background-color: #ddd;
+}
+
+.payouthistory .row .pagination a .active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.payouthistory table {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 95%;
+  font-size: 1.2em;
+  border-collapse: collapse;
+}
+
+.payouthistory table thead tr {
+  background-color: none;
+}
+
+.payouthistory table thead tr th {
+  padding: 1.5% 0;
+  color: #979797;
+}
+
+.payouthistory table thead tr th p {
+  display: inline-block;
+}
+
+.payouthistory table thead tr th div {
+  display: none;
+}
+
+.payouthistory table thead tr th:hover {
+  background-color: #e3e3e3;
+  border-radius: 4px;
+  color: black;
+}
+
+.payouthistory table thead tr th:hover div {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.payouthistory table tbody tr {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.payouthistory table tbody tr:hover {
+  background-color: #e3e3e3;
+}
+
+.payouthistory table tbody tr td {
+  padding: 1.5% 0;
+  color: black;
 }
 
 /* Pages / Views */

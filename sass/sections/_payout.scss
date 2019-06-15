@@ -1,3 +1,9 @@
 .payouthistory{
-
+    @include time;
+    .row{
+        margin: 3% auto;
+        text-align: center;
+        @include pagination;
+    }
+    @include table;
 }
