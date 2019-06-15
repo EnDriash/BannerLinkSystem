@@ -77,13 +77,15 @@ nav{
             h5{
             }
             [class^="cont-"]{
-                padding: 15px 10px;
                 .img{
                     display: inline-block;
-                    width: 15px;
-                    height: 15px;
+                    width: 35px;
+                    height: 35px;
                     border-radius: 5px;
-                    padding: 5px;
+                    padding: 0 5px;
+                        img{
+                            width: 100%;
+                        }
                 }
                 a{
                     color: $link-color;

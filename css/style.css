@@ -344,7 +344,6 @@ template {
   float: left;
   display: inline-block;
   box-sizing: border-box;
-  padding: 2.5%;
 }
 
 .row {
@@ -811,18 +810,94 @@ section h5 {
 }
 
 .button:hover {
-  transform: scale(0.95);
   cursor: pointer;
 }
 
 .button:hover p {
-  transform: scale(1.2);
+  transform: scale(0.9);
   font-weight: bold;
 }
 
 .button p {
   text-align: center;
   margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
+}
+
+.overlay::webkit-scrollbar {
+  display: none;
+}
+
+.overlay .svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.overlay .modal {
+  max-width: 700px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  padding: 1.5% 3%;
+}
+
+.overlay .modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  color: #979797;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.overlay .modal h4 {
+  border-bottom: 1px #e3e3e3 solid;
+  padding: 3%;
+  margin: 0;
+}
+
+.overlay .modal.show {
+  display: block;
+}
+
+.overlay.show {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.belt-online {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+  padding: 1% 2%;
+}
+
+.belt-offline {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  padding: 1% 2%;
 }
 
 /* Sections */
@@ -918,16 +993,16 @@ nav .contacts {
   padding-left: 25px;
 }
 
-nav .contacts [class^="cont-"] {
-  padding: 15px 10px;
-}
-
 nav .contacts [class^="cont-"] .img {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 35px;
+  height: 35px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 0 5px;
+}
+
+nav .contacts [class^="cont-"] .img img {
+  width: 100%;
 }
 
 nav .contacts [class^="cont-"] a {
@@ -1415,6 +1490,99 @@ main {
 .payouthistory table tbody tr td {
   padding: 1.5% 0;
   color: black;
+}
+
+.login-popup {
+  display: none;
+}
+
+.login-popup .row > div {
+  border: 1px #979797 solid;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 3%;
+  float: left;
+}
+
+.login-popup .row > div input {
+  border: none;
+}
+
+.login-popup .row > div input:focus {
+  outline: none;
+}
+
+.login-popup .row .button {
+  margin: 3%;
+}
+
+.login-popup .row .login input {
+  position: relative;
+  top: -5px;
+}
+
+.quit-popup {
+  display: none;
+  overflow: auto;
+  width: 300px;
+}
+
+.quit-popup .buttons .button {
+  float: right;
+  margin: 0 2%;
+}
+
+.quit-popup .buttons .cancel {
+  background-color: #979797;
+}
+
+.quit-popup .buttons .cancel:hover {
+  background-color: #f58220;
+}
+
+.modal.message-popup {
+  padding: 0;
+}
+
+.modal.message-popup .row {
+  padding: 3% 1%;
+}
+
+.modal.message-popup .person {
+  border-bottom: 1px #e3e3e3 solid;
+}
+
+.modal.message-popup .person img {
+  width: 100%;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.modal.message-popup .person h3 {
+  margin: 0;
+  color: black;
+}
+
+.modal.message-popup .message-window {
+  height: 300px;
+  border-bottom: 1px #e3e3e3 solid;
+}
+
+.modal.message-popup .send .row textarea {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  resize: none;
+  padding: 1%;
+  margin: 0;
+}
+
+.modal.message-popup .send .row .button {
+  box-sizing: border-box;
+  width: 80%;
+  float: right;
+  padding: 10% 0;
 }
 
 /* Pages / Views */

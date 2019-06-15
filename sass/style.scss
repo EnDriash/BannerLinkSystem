@@ -6,6 +6,8 @@
 @import "components/_text";
 @import "components/_sections";
 @import "components/_buttons";
+@import "components/_modal";
+@import "components/_belt";
 
 /* Sections */
 @import "sections/_nav";
@@ -17,6 +19,9 @@
 @import "sections/_personaldata";
 @import "sections/_details";
 @import "sections/_payout";
+@import "sections/_login-popup";
+@import "sections/_quit-popup";
+@import "sections/_message-popup";
 
 /* Pages / Views */
 @import "pages/_general";

@@ -1,0 +1,29 @@
+.login-popup{
+    display: none;
+    .svg{
+    }
+    .row{
+        & > div{
+            border: 1px $main-color solid;
+            border-radius: 2px;
+            display: inline-block;
+            margin: 3%;
+            float: left;
+            
+                input{
+                    border: none;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+        }
+        .button{
+            margin: 3%;
+        }
+        .login input{
+            position: relative;
+            top: -5px;
+            }
+        
+    }
+}
