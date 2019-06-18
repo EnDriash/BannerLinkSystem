@@ -3,6 +3,7 @@ section{
     margin: 20px;
     background-color: white;
     border-radius: 10px;
+    display: none;
         h4{ 
             box-sizing: border-box;
             font-size: 1.5em;
@@ -18,3 +19,6 @@ section{
         
         }
     }
+section.show{
+    display: block;
+}

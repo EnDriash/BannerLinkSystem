@@ -55,7 +55,7 @@ nav{
                         text-decoration: none;
                         color: $main-color;
                     }
-                    &:hover, &:target{
+                    &:hover{
                         background-color: #282828;
                         border-left: 4px $orange-color solid;
                         a{
@@ -67,9 +67,19 @@ nav{
                             }
                         }
                     }
-                    
-                    
                 }
+               li.active{
+                    background-color: #282828;
+                    border-left: 4px $orange-color solid;
+                    a{
+                        color: white;
+                    }
+                    div{
+                        svg{
+                            stroke: white;
+                        }
+                    }
+               } 
             }
         }
         .contacts{
@@ -92,6 +102,10 @@ nav{
                     text-decoration: none;
                 }
             }
-
         }
+}
+nav.show{
+.navigation-list{
+    display: none;
+}
 }

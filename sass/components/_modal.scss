@@ -15,6 +15,7 @@
     padding: 30px;
 
     display: none;
+
         &::webkit-scrollbar {
             display: none;
         }
@@ -31,7 +32,7 @@
             background-color: #ffffff;
             position: relative;
             padding: 1.5% 3%;
-
+            display: none;
                 .btn-close {
                     position: absolute;
                     top: 0;
@@ -56,4 +57,4 @@
 
 .overlay.show {
     display: flex;
-    }
+}
