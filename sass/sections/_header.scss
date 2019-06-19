@@ -12,17 +12,13 @@ header{
         & > div{
             border-left: 1px $lightgrey-color solid;
         }
-        .exit{
-            position: relative;
-            top:-5px;
-        }
         .exit, .notifications, .account{
             cursor: pointer;
         }
         div{
             display: inline-block;
             box-sizing: border-box;
-            padding: 20px 10px;
+            padding: 17px 10px;
             
                  p{
                      color: $main-color;

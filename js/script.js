@@ -113,9 +113,38 @@ document.querySelectorAll("nav li").forEach( function(btn){
         document.querySelectorAll('nav li').forEach( function(btn){
             btn.classList.remove('active');
         });
-        var  list = document.querySelectorAll("nav li");
-        var index = Array.from(list).indexOf(btn.target);
-        console.log(index);
+        var index; 
+        console.log(btn.target.nodeName);
+        console.log(btn.target.parentNode.nodeName);
+
+        //!!!!! TO CORRECTION WHEN SKILL WILL GROW UP!!!!!!
+    
+        if(btn.target.nodeName === "LI"){
+            var list = document.querySelectorAll("nav li");
+            index = Array.from(list).indexOf(btn.target);
+            console.log(index);
+        }
+        else if(btn.target.nodeName === "DIV"){
+            var list = document.querySelectorAll("nav div");
+            index = Array.from(list).indexOf(btn.target);
+            console.log(index);
+        }
+        else if(btn.target.nodeName === "svg"){
+            var list = document.querySelectorAll("nav svg");
+            index = Array.from(list).indexOf(btn.target);
+            console.log(index);
+        }
+        else if(btn.target.nodeName === "path"){
+            var list = document.querySelectorAll("nav path");
+            index = Array.from(list).indexOf(btn.target);
+            console.log(index);
+        }
+        else if(btn.target.nodeName === "A"){
+            var list = document.querySelectorAll("nav a");
+            index = Array.from(list).indexOf(btn.target);
+            console.log(index);
+        }
+
         document.querySelectorAll("main section").forEach( function(hide){
             hide.classList.remove("show");
         });
@@ -131,9 +160,5 @@ if (x.matches) { // If media query matches
         });
     });
 }
-   
-
-
-
 });
 

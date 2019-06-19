@@ -1052,11 +1052,6 @@ header .header-container > div {
   border-left: 1px #e3e3e3 solid;
 }
 
-header .header-container .exit {
-  position: relative;
-  top: -5px;
-}
-
 header .header-container .exit, header .header-container .notifications, header .header-container .account {
   cursor: pointer;
 }
@@ -1064,7 +1059,7 @@ header .header-container .exit, header .header-container .notifications, header 
 header .header-container div {
   display: inline-block;
   box-sizing: border-box;
-  padding: 20px 10px;
+  padding: 17px 10px;
 }
 
 header .header-container div p {
@@ -1712,6 +1707,9 @@ body {
     float: none;
     margin: 1% auto;
     display: block;
+  }
+  .overlay {
+    padding: 0;
   }
 }
 
