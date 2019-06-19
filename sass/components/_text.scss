@@ -13,12 +13,20 @@ h3{
 h4{
     font-size: 1.5em;
     color: $main-color;
+    font-weight: 500;
 }
 h5{
     font-size: 1em;
     color: $main-color;
+    font-weight: 600;
 }
 h6{
     font-size: 0.75em;
     color: $main-color;
+}
+p{
+    font-weight: 400;
+}
+a{
+    font-weight: 300;
 }
