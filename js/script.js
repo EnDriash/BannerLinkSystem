@@ -159,6 +159,6 @@ if (x.matches) { // If media query matches
             document.querySelector('nav').classList.remove("show");
         });
     });
-}
+};
 });
 
