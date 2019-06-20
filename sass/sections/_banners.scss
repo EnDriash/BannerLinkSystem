@@ -14,9 +14,7 @@
                 tr{
                     &:hover{
                         background-color: $lightgrey-color;
-                        .link a{
-                           color: #336bdd;
-                        }
+                        cursor: pointer;
                         .icons{
                             div{
                                 svg{

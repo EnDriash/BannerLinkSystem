@@ -1036,7 +1036,7 @@ nav .contacts [class^="cont-"] .img img {
 }
 
 nav .contacts [class^="cont-"] a {
-  color: #83a3b9;
+  color: #56819f;
   text-decoration: none;
 }
 
@@ -1081,7 +1081,7 @@ header .header-container div p {
 }
 
 header .header-container div a {
-  color: #83a3b9;
+  color: #56819f;
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
@@ -1173,10 +1173,7 @@ main {
 
 .links .row .table table tr:hover {
   background-color: #e3e3e3;
-}
-
-.links .row .table table tr:hover .link a {
-  color: #336bdd;
+  cursor: pointer;
 }
 
 .links .row .table table tr:hover .icons div svg {
@@ -1194,7 +1191,7 @@ main {
 
 .links .row .table table tr .link a {
   font-size: 1.4em;
-  color: #83a3b9;
+  color: #56819f;
   text-decoration: none;
 }
 
@@ -1230,10 +1227,7 @@ main {
 
 .banners .row .table table tr:hover {
   background-color: #e3e3e3;
-}
-
-.banners .row .table table tr:hover .link a {
-  color: #336bdd;
+  cursor: pointer;
 }
 
 .banners .row .table table tr:hover .icons div svg {
@@ -1251,7 +1245,7 @@ main {
 
 .banners .row .table table tr .link a {
   font-size: 1.4em;
-  color: #83a3b9;
+  color: #56819f;
   text-decoration: none;
 }
 
@@ -1348,7 +1342,7 @@ main {
 
 .details .row .pagination a {
   font-size: 1.5em;
-  color: black;
+  color: #668ca5;
   padding: 10px 8px;
   text-decoration: none;
   transition: background-color .3s;
@@ -1454,7 +1448,7 @@ main {
 
 .payouthistory .row .pagination a {
   font-size: 1.5em;
-  color: black;
+  color: #668ca5;
   padding: 10px 8px;
   text-decoration: none;
   transition: background-color .3s;
