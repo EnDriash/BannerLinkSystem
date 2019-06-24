@@ -1385,7 +1385,7 @@ main {
 .details table thead tr th:hover {
   background-color: #e3e3e3;
   border-radius: 4px;
-  color: black;
+  color: #333333;
 }
 
 .details table thead tr th:hover div {
@@ -1404,7 +1404,7 @@ main {
 
 .details table tbody tr td {
   padding: 1.5% 0;
-  color: black;
+  color: #333333;
 }
 
 .payouthistory .time {
@@ -1491,7 +1491,7 @@ main {
 .payouthistory table thead tr th:hover {
   background-color: #e3e3e3;
   border-radius: 4px;
-  color: black;
+  color: #333333;
 }
 
 .payouthistory table thead tr th:hover div {
@@ -1510,7 +1510,7 @@ main {
 
 .payouthistory table tbody tr td {
   padding: 1.5% 0;
-  color: black;
+  color: #333333;
 }
 
 .login-popup .row > div {

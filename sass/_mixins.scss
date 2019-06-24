@@ -71,7 +71,7 @@
                 &:hover{
                     background-color: $lightgrey-color;
                     border-radius: 4px;
-                    color: black;
+                    color: #333333;
                     div{
                         display: inline-block;
                         width: 15px;
@@ -89,7 +89,7 @@
                 }
                 td{
                     padding: 1.5% 0;
-                    color: black;
+                    color: #333333;
                 }
             }
         }
